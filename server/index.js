@@ -7,7 +7,7 @@ var logger = require('morgan');
 var routes = require('./routes');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/react-express-api');
+mongoose.connect('mongodb://localhost:27017/react-express');
 
 app.use(bodyParser.json());
 app.use(cors());

@@ -1,12 +1,12 @@
 {
-  "name": "react-express-api",
+  "name": "react-express",
   "version": "1.0.0",
   "description": "react-express-api 后端",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "happypeter",
+  "author": "hikalu",
   "license": "CC0-1.0",
   "dependencies": {
     "body-parser": "^1.15.0",
