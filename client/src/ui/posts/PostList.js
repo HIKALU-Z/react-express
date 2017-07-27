@@ -52,6 +52,19 @@ class PostList extends Component {
         bottom: "16px",
         right: "16px"
       },
+      button: {
+        display: "block",
+        margin: "30px auto",
+        width: "120px",
+        height: "36px",
+        lineHeight: "36px",
+        textAlign: "center",
+        backgroundColor: "#ff4081",
+        fontSize: "1em",
+        color: "#fff",
+        textDecoration: "none",
+        borderRadius: "20px"
+      },
       link: {
         display: "inline-block",
         fontSize: ".9em",
@@ -83,6 +96,9 @@ class PostList extends Component {
 
     return (
       <div>
+        <Link to="/posts/new" style={styles.button}>
+          写文章
+        </Link>
         {postList}
       </div>
     );
