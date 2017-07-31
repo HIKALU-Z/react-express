@@ -75,11 +75,11 @@ class Form extends Component {
       <form style={styles.form} onSubmit={this.handleSubmit.bind(this)}>
         <div style={styles.div}>
           <label style={styles.label}>分类</label>
-          <input style={styles.input} key="0" ref="category" />
+          <input style={styles.input} key="0" ref="category" defaultValue={this.props.post ? this.props.post.category : ''}/>
         </div>
         <div style={styles.div}>
           <label style={styles.label}>标题</label>
-          <input style={styles.input} key="1" ref="title" />
+          <input style={styles.input} key="1" ref="title" defaultValue={this.props.post ? this.props.post.title : ''}  />
         </div>
         <div style={styles.div}>
           <label style={styles.label}>内容</label>
@@ -88,6 +88,7 @@ class Form extends Component {
             rows="20"
             key="2"
             ref="content"
+            defaultValue={this.props.post ? this.props.post.content : ''} 
           />
         </div>
         <div style={styles.actions}>

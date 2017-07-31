@@ -5,6 +5,7 @@ import ShowPost from './ui/posts/ShowPost';
 import App from './ui/App';
 import PostList from './ui/posts/PostList';
 import NewPost from './ui/posts/NewPost';
+import EditPost from './ui/posts/EditPost';
 
 export const renderRoutes = () => (
   <Router history={browserHistory}>
@@ -12,6 +13,7 @@ export const renderRoutes = () => (
       <IndexRoute component={PostList} />
       <Route path='/posts/new' component={NewPost} />
       <Route path='/posts/:post_id' component={ShowPost} />
+      <Route path='/posts/:post_id/edit' component={EditPost} />
     </Route>
   </Router>
 );

@@ -89,6 +89,9 @@ class PostList extends Component {
             <Link to={`/posts/${post._id}`} style={styles.link}>
               查看
             </Link>
+            <Link to={`/posts/${post._id}/edit`} style={styles.link}>
+              编辑
+            </Link>
           </div>
         </div>
       );
